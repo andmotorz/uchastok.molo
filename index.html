@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113698400', 'ym');
+
+    ym(113698400, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113698400" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твой участок | Канализация и ЖБИ кольца в Молодечно</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981;
+            --primary-glow: rgba(16, 185, 129, 0.4);
+            --primary-hover: #059669;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --insta: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* Шапка */
+        header {
+            position: fixed; top: 0; width: 100%; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(12px);
+            padding: 15px 0; z-index: 1000; border-bottom: 1px solid var(--border);
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 24px; font-weight: 800; color: white; letter-spacing: 1px; }
+        .logo span { color: var(--primary); }
+        
+        nav { display: flex; gap: 20px; }
+        nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 15px; position: relative; }
+        nav a:hover { color: var(--primary); }
+        nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary); transition: 0.3s; }
+        nav a:hover::after { width: 100%; }
+
+        .header-actions { display: flex; gap: 15px; align-items: center; }
+        .insta-link { 
+            display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; 
+            background: var(--insta); color: white; font-size: 20px; text-decoration: none; transition: 0.3s;
+        }
+        .insta-link:hover { transform: scale(1.1) rotate(10deg); }
+        
+        .header-phone { background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; box-shadow: 0 4px 15px var(--primary-glow); }
+        .header-phone:hover { background: var(--primary-hover); transform: translateY(-2px); }
+
+        /* Главный экран */
+        .hero {
+            height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(16, 185, 129, 0.2) 100%), url('https://images.unsplash.com/photo-1541888078693-01865a73384c?q=80&w=2070&auto=format&fit=crop') center/cover;
+            position: relative; padding: 0 20px; padding-top: 80px;
+        }
+        .hero-content { max-width: 900px; z-index: 1; }
+        .hero h1 { font-size: 54px; font-weight: 800; margin-bottom: 20px; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.8); }
+        .hero h1 span { color: var(--primary); text-shadow: 0 0 30px var(--primary-glow); }
+        .hero p { font-size: 22px; margin-bottom: 40px; color: #e2e8f0; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+        .btn-main {
+            display: inline-block; background: var(--primary); color: white; padding: 18px 45px;
+            border-radius: 12px; text-decoration: none; font-size: 18px; font-weight: 700; transition: 0.3s; border: none; cursor: pointer;
+            box-shadow: 0 10px 30px var(--primary-glow); text-transform: uppercase; letter-spacing: 1px;
+        }
+        .btn-main:hover { background: var(--primary-hover); transform: translateY(-5px); box-shadow: 0 15px 40px rgba(16, 185, 129, 0.6); }
+
+        /* Секции */
+        .section { padding: 100px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { font-size: 38px; text-align: center; margin-bottom: 60px; font-weight: 800; color: white; }
+        .section-title span { color: var(--primary); }
+
+        /* Услуги (без картинок) */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card {
+            background: var(--bg-card); padding: 40px; border-radius: 20px; border: 1px solid var(--border);
+            transition: 0.4s; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--primary);
+            transform: scaleX(0); transform-origin: left; transition: 0.4s;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .service-card h3 { font-size: 24px; margin-bottom: 15px; color: white; }
+        .service-card p { color: var(--text-muted); font-size: 16px; line-height: 1.7; }
+        .service-card .price-tag { margin-top: 20px; display: inline-block; background: rgba(16, 185, 129, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 20px; font-weight: 600; font-size: 14px; }
+
+        /* Таблица */
+        .table-wrapper { background: var(--bg-card); border-radius: 20px; padding: 10px; border: 1px solid var(--border); box-shadow: 0 15px 35px rgba(0,0,0,0.3); overflow-x: auto; }
+        .price-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        .price-table th { background: rgba(16, 185, 129, 0.1); color: var(--primary); padding: 20px; text-align: left; font-weight: 700; font-size: 18px; border-bottom: 1px solid var(--border); }
+        .price-table td { padding: 20px; border-bottom: 1px solid var(--border); color: #f1f5f9; font-size: 16px; }
+        .price-table tr:last-child td { border-bottom: none; }
+        .price-table tr:hover td { background: rgba(255,255,255,0.02); }
+        .in-stock { color: var(--primary); font-weight: 600; display: flex; align-items: center; gap: 5px; }
+        .in-stock::before { content: '●'; font-size: 12px; }
+
+        /* Форма */
+        .form-wrapper { background: var(--bg-card); padding: 50px; border-radius: 24px; max-width: 600px; margin: 0 auto; border: 1px solid var(--border); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6); position: relative; }
+        .form-wrapper::after { content: ''; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: var(--primary); border-radius: 0 0 10px 10px; }
+        .form-wrapper h2 { text-align: center; margin-bottom: 30px; font-size: 28px; color: white; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-muted); }
+        .form-group input, .form-group select {
+            width: 100%; padding: 16px; background: var(--bg-dark); border: 1px solid var(--border); border-radius: 10px;
+            color: white; font-size: 16px; transition: 0.3s; outline: none;
+        }
+        .form-group input:focus, .form-group select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); }
+        .btn-submit {
+            width: 100%; padding: 18px; background: var(--primary); color: white; border: none; border-radius: 10px;
+            font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; margin-top: 10px;
+        }
+        .btn-submit:hover { background: var(--primary-hover); }
+
+        /* Плавающие кнопки */
+        .floating-buttons { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 999; }
+        .float-btn {
+            width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 24px; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.4); transition: 0.3s;
+        }
+        .float-btn:hover { transform: scale(1.15); }
+        .float-viber { background: #7360f2; }
+        .float-tg { background: #0088cc; }
+        .float-insta { background: var(--insta); }
+
+        /* Подвал */
+        footer { background: #0b1120; padding: 50px 20px; text-align: center; color: var(--text-muted); font-size: 14px; border-top: 1px solid var(--border); }
+        footer .footer-insta { display: inline-flex; align-items: center; gap: 10px; color: white; text-decoration: none; background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 30px; margin-top: 15px; transition: 0.3s; }
+        footer .footer-insta:hover { background: rgba(255,255,255,0.1); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            nav { display: none; }
+            .section { padding: 60px 20px; }
+            .form-wrapper { padding: 30px 20px; }
+            .section-title { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">ТВОЙ <span>УЧАСТОК</span></div>
+            <nav>
+                <a href="#rings">Кольца</a>
+                <a href="#sewer">Канализация</a>
+                <a href="#goods">Товары</a>
+                <a href="#tech">Спецтехника</a>
+                <a href="#materials">Сыпучие</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://www.instagram.com/uchastok.molo" target="_blank" class="insta-link" title="Мы в Instagram">📸</a>
+                <a href="tel:+375291136921" class="header-phone">📞 Позвонить</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content fade-up">
+            <h1>Всё для вашего участка <br><span>от и до</span></h1>
+            <p>Канализация под ключ, ЖБИ кольца, спецтехника и сыпучие материалы. Работаем в Молодечно и радиусе 100 км.</p>
+            <a href="#order" class="btn-main">Оставить заявку</a>
+        </div>
+    </div>
+
+    <div class="section" id="rings">
+        <h2 class="section-title fade-up">ЖБИ <span>Кольца</span></h2>
+        <div class="table-wrapper fade-up">
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Изделие</th>
+                        <th>Размеры (высота)</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Кольцо КС 7</td><td>30 см</td><td><span class="in-stock">В наличии</span></td></tr>
+                    <tr><td>Кольцо КС 10</td><td>30, 60, 90 см</td><td><span class="in-stock">В наличии</span></td></tr>
+                    <tr><td>Кольцо КС 15</td><td>30, 60, 90 см</td><td><span class="in-stock">В наличии</span></td></tr>
+                    <tr><td>Крышки (ПП 10, 15)</td><td>Обычные и усиленные</td><td><span class="in-stock">В наличии</span></td></tr>
+                    <tr><td>Днища (ПН 10, 15)</td><td>Усиленные</td><td><span class="in-stock">В наличии</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="sewer">
+        <h2 class="section-title fade-up">Канализация <span>под ключ</span></h2>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <h3>Быстрый монтаж</h3>
+                <p>Привезём технику, доставим кольца, выкопаем, установим и подключим. Монтаж занимает всего 1 день. Доставка рассчитывается индивидуально.</p>
+                <div class="price-tag">За 1 день</div>
+            </div>
+            <div class="service-card fade-up">
+                <h3>Работа под ключ</h3>
+                <p>Вам не нужно искать копателей или монтажников. Всё делаем сами. Без посредников, наценок и "перекупов".</p>
+                <div class="price-tag">Всё включено</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="goods">
+        <h2 class="section-title fade-up">Люки и <span>Трубы</span></h2>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <h3>Пластиковые люки</h3>
+                <p>Надёжные люки для канализации. В наличии. Доставка рассчитывается индивидуально.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>Трубы для канализации</h3>
+                <p>В наличии. Доставка рассчитывается индивидуально.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="tech">
+        <h2 class="section-title fade-up">Спец<span>техника</span></h2>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <h3>🚜 Экскаватор</h3>
+                <p>Копка котлованов, траншей, планировка участка. Работаем аккуратно и точно.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>🚜 Погрузчик</h3>
+                <p>Планировка, подсыпка, подготовка под газон и плитку. Идеально ровная поверхность.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>🚜 Манипулятор</h3>
+                <p>Доставка колец, блоков, труб. Аккуратная разгрузка без повреждений.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>🚛 Самосвал</h3>
+                <p>Доставка песка, щебня, грунта. Вывоз мусора. Работаем по области.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="materials">
+        <h2 class="section-title fade-up">Сыпучие <span>материалы</span></h2>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <h3>🏖 Песок</h3>
+                <p>Карьерный, мытый, сеяный. Доставка самосвалом. Отличное качество для любых работ.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>🪨 Гравий</h3>
+                <p>Любые фракции. Для дорог, площадок, дренажа. Привезём вовремя.</p>
+            </div>
+            <div class="service-card fade-up">
+                <h3>🌍 Земля</h3>
+                <p>Привоз плодородного грунта. Вывоз лишнего. Подготовим участок под газон.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="order">
+        <div class="form-wrapper fade-up">
+            <h2>Оставить заявку</h2>
+            <form id="tgForm">
+                <div class="form-group">
+                    <label>Ваше имя</label>
+                    <input type="text" id="name" required placeholder="Иван">
+                </div>
+                <div class="form-group">
+                    <label>Номер телефона</label>
+                    <input type="tel" id="phone" required placeholder="+375 29 000 00 00">
+                </div>
+                <div class="form-group">
+                    <label>Ваш населенный пункт (или район)</label>
+                    <input type="text" id="location" required placeholder="Например: г. Вилейка">
+                </div>
+                <div class="form-group">
+                    <label>Что вас интересует?</label>
+                    <select id="service">
+                        <option value="Канализация под ключ">Канализация под ключ</option>
+                        <option value="ЖБИ Кольца">ЖБИ Кольца</option>
+                        <option value="Спецтехника">Спецтехника</option>
+                        <option value="Сыпучие материалы">Сыпучие материалы</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit" id="submitBtn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>ИП Ткаченко В.В. | УНП 692272978</p>
+        <p style="margin-top: 10px;">Работаем в Минской и Гродненской областях (радиус 100 км от Молодечно)</p>
+        <a href="https://www.instagram.com/uchastok.molo" target="_blank" class="footer-insta">
+            📸 Подписывайтесь в Instagram: @uchastok.molo
+        </a>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="https://www.instagram.com/uchastok.molo" target="_blank" class="float-btn float-insta" title="Instagram">📸</a>
+        <a href="https://viber.me/375291136921" target="_blank" class="float-btn float-viber" title="Viber">💬</a>
+        <a href="https://t.me/Uchastok_molo" target="_blank" class="float-btn float-tg" title="Telegram">✈️</a>
+    </div>
+
+    <script>
+        // ВСТАВЬ СВОЙ ТОКЕН И ID СЮДА (без квадратных скобок)
+        const TOKEN = '8812574962:AAEz3-MXHN8vrNCztgxxgTC_ojk4pr86oHM';
+        const CHAT_ID = '7417411727';
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+
+        document.getElementById('tgForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const location = document.getElementById('location').value;
+            const service = document.getElementById('service').value;
+            const btn = document.getElementById('submitBtn');
+
+            btn.disabled = true;
+            btn.innerText = 'Отправка...';
+
+            const text = `🔥 Новая заявка с сайта!%0A%0A👤 Имя: ${name}%0A📞 Телефон: ${phone}%0A📍 Локация: ${location}%0A🛠 Услуга: ${service}`;
+            const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}`;
+
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        alert('✅ Спасибо! Мы перезвоним в ближайшее время.');
+                        document.getElementById('tgForm').reset();
+                    } else {
+                        throw new Error('Ошибка');
+                    }
+                })
+                .catch(error => {
+                    alert('❌ Ошибка отправки. Позвоните: +375 29 113 69 21');
+                })
+                .finally(() => {
+                    btn.disabled = false;
+                    btn.innerText = 'Отправить заявку';
+                });
+        });
+    </script>
+</body>
+</html>
